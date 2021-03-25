@@ -13,8 +13,16 @@ body {
 	flex-direction: column;
 	margin: 0;
 	color: #533738;
-	width: 100vw;
+	width: 100%;
+	font-size: calc(14px + 5 * ((100vw - 320px) / (1400 - 320)));
 }
+h1 {
+	font-size: calc(25px + 26 * ((100vw - 320px) / (1400 - 320)));
+}
+h2 {
+	font-size: calc(22px + 19 * ((100vw - 320px) / (1400 - 320)));
+}
+
 header {
 	margin: 0;
 	background: url("../img/background1.png") no-repeat;
@@ -79,14 +87,12 @@ a {
 }
 .comfort h1 {
 	font-weight: 400;
-	font-size: 50px;
 	line-height: 62px;
 }
 .comfort p {
 	max-width: 493px;
 	margin-top: 20px;
 	line-height: 30px;
-	font-size: 18px;
 }
 .submit {
 	margin-top: 20px;
@@ -97,19 +103,17 @@ a {
 	display: inline-block;
 }
 .submit span {
-	font-family: "Montserrat", sans-serif;
 	font-style: normal;
 	font-weight: 500;
 	color: #533738;
 	line-height: 24px;
-	font-size: 20px;
+	font-size: calc(16px + 5 * ((100vw - 320px) / (1400 - 320)));
 }
 .comfort button:hover {
 	cursor: pointer;
 }
 h2 {
 	font-weight: normal;
-	font-size: 40px;
 	line-height: 50px;
 	text-transform: uppercase;
 	color: #533738;
@@ -157,7 +161,6 @@ main {
 .about-us-text {
 	margin-left: 4.8vw;
 	font-weight: 400;
-	font-size: 18px;
 	line-height: 30px;
 	width: 50%;
 }
@@ -171,7 +174,6 @@ main {
 }
 .footer-about-us h1 {
 	font-weight: normal;
-	font-size: 50px;
 	line-height: 62px;
 	font-style: normal;
 }
@@ -189,7 +191,7 @@ main {
 }
 .footer-about-us span {
 	font-weight: 500;
-	font-size: 30px;
+	font-size: calc(15px + 16 * ((100vw - 320px) / (1400 - 320)));
 	line-height: 37px;
 	text-transform: uppercase;
 }
@@ -207,17 +209,23 @@ main {
 .our-work h2 {
 	margin-top: 65px;
 	margin-bottom: 10px;
-	text-align: left;
+	justify-self: start;
+	align-self: stretch;
+	grid-column: 1 / 5;
 }
 .work-photo {
 	display: -ms-grid;
 	display: grid;
 	grid-column: 5fr 2fr 5fr;
+	grid-row: 1fr 1fr;
+	justify-items: center;
+	align-items: center;
+	justify-content: center;
+	align-content: center;
 	grid-gap: 30px 20px;
 	-webkit-box-pack: start;
 	-ms-flex-pack: start;
 	justify-content: start;
-
 	text-align: center;
 }
 .photo {
@@ -231,8 +239,8 @@ main {
 	position: absolute;
 	top: 0;
 	left: 0;
-	height: 100%;
 	width: 100%;
+	max-width: 100%;
 }
 .photo div:hover {
 	opacity: 1;
@@ -246,7 +254,6 @@ main {
 }
 .photo p:last-child {
 	line-height: 30px;
-	font-size: 18px;
 	text-align: left;
 	margin-top: 20px;
 	margin-left: 35px;
@@ -255,7 +262,7 @@ main {
 .work-photo img {
 	display: block;
 	width: 100%;
-	height: 100%;
+	max-width: 100%;
 }
 .work-photo .photo1 {
 	-ms-grid-row: 2;
@@ -322,7 +329,6 @@ main {
 	margin-right: 38px;
 }
 .comand-photo figcaption {
-	font-size: 18px;
 	line-height: 30px;
 }
 .how-work {
@@ -359,7 +365,6 @@ main {
 }
 .how-work p {
 	max-width: 285px;
-	font-size: 18px;
 	line-height: 30px;
 	color: #533738;
 }
@@ -398,7 +403,6 @@ main {
 	-webkit-box-pack: justify;
 	-ms-flex-pack: justify;
 	justify-content: space-between;
-	font-size: 18px;
 	line-height: 30px;
 	margin-right: 20px;
 	max-width: 407px;
@@ -487,7 +491,6 @@ main {
 	margin-top: 50px;
 	font-style: normal;
 	font-weight: normal;
-	font-size: 40px;
 	line-height: 50px;
 	text-transform: uppercase;
 }
@@ -496,7 +499,6 @@ main {
 }
 .request p {
 	color: #ffffff;
-	font-size: 18px;
 	line-height: 30px;
 	opacity: 0.6;
 	margin-top: 24px;
@@ -516,19 +518,15 @@ main {
 }
 .request input::-webkit-input-placeholder {
 	color: #ffffff;
-	font-size: 18px;
 }
 .request input:-ms-input-placeholder {
 	color: #ffffff;
-	font-size: 18px;
 }
 .request input::-ms-input-placeholder {
 	color: #ffffff;
-	font-size: 18px;
 }
 .request input::placeholder {
 	color: #ffffff;
-	font-size: 18px;
 }
 .request form p:nth-child(3) {
 	margin-top: 44px;
@@ -552,7 +550,6 @@ footer {
 	background-color: #efe6e4;
 	box-sizing: border-box;
 	padding: 37px 7.2vw;
-	font-size: 18px;
 	line-height: 30px;
 }
 footer p:last-child {
